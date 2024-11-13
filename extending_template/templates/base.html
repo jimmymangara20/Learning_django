@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<title>Document</title>-->
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'asset\style.css'%}">
+    <link rel="stylesheet" href="{% static 'static\asset\css\bootstrap.min.css' %}">
+</head>
+<body>
+    <main>
+        <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'myapp:index' %}">Index page</a></li>
+                <li><a href="{% url 'myapp:about'%}">About Us</a></li>
+                <li><a href="{% url 'myapp:story'%}">Our story</a></li>
+                <li><a href="{% url 'myapp:contact'%}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+        {% block content%}
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, pariatur esse non qui nobis distinctio sit nesciunt tempore maiores quia, 
+    <br>voluptate quibusdam et nemo similique eos placeat minus consectetur iste!</p>
+        {% endblock %}
+    </main>
+    {% block footer %}
+   <marquee behavior="" direction="">&copy;copyright 2024 by Jimmy The Great</marquee> 
+    {% endblock %}
+
+</body>
+</html>

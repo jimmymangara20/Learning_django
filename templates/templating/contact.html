@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="{% static 'asset\style.css'%}">
+</head>
+<body style="background-color: blue; font-family: Arial, sans-serif; color: #333;">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'templating:about' %}">About Us</a><br></li>
+                <li> <a href="{% url 'templating:contact' %}">Contact</a><br></li>
+                <li><a href="{% url 'templating:team' %}">Our Team</a><br></li>
+                <li><a href="{% url 'templating:story' %}">Our Story</a><br></li>
+
+            </ul>
+        </nav>
+    </header>
+    <h2 style="color: pink; font-size: 24px; text-align: center;">This is contact page</h2>
+    <img src="{%static 'asset\images\apostle.jpg'%}" alt=""style="display: inline-block; margin-right: 10px;">
+    <img src="{%static 'asset\images\forever.jpg'%}" alt=""style="display: inline-block;">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam eaque soluta, dolorum deserunt dolores quibusdam provident, minus enim, obcaecati recusandae.
+         Quis nesciunt consequatur maiores quia sunt? Sequi, minima sit?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sint dolore eius odit. Libero, delectus, nostrum ipsa, 
+            illo praesentium deleniti nemo possimus dolore vero corporis necessitatibus. Modi alias dolore ratione.</p>
+</body>
+</html>

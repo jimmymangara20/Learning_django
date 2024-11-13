@@ -1,0 +1,79 @@
+h2{
+    color: blueviolet;
+}
+/* Style for the <header> container */
+header {
+    background-color: magenta;       /* Background color for the header */
+    padding: 20px;                /* Adds padding inside the header */
+  }
+  
+  /* Style for the <nav> container */
+  header nav {
+    text-align: center;           /* Center-aligns content inside nav */
+  }
+  
+  /* Styling the <ul> inside the <nav> */
+  header nav ul {
+    list-style-type: none;        /* Remove bullets */
+    margin: 0;
+    padding: 0;
+    display: flex;                /* Display items in a row */
+    justify-content: center;      /* Center items in nav */
+    gap: 20px;                    /* Space between each list item */
+  }
+  
+  /* Styling individual <li> items */
+  header nav ul li {
+    margin: 0;
+  }
+  
+  /* Styling <a> links inside nav */
+  header nav ul li a {
+    color: #ffffff;               /* Link text color */
+    text-decoration: none;        /* Remove underline */
+    font-weight: bold;            /* Make links bold */
+    font-size: 16px;              /* Font size */
+    padding: 10px 15px;           /* Adds padding around links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+  }
+  
+  /* Hover effect for links */
+  header nav ul li a:hover {
+    background-color: #555;       /* Background color on hover */
+    border-radius: 5px;           /* Rounded corners for hover effect */
+    color: #fff;                  /* Text color on hover */
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    header nav ul {
+      flex-direction: column;     /* Stack items vertically */
+      gap: 10px;                  /* Adjust spacing for smaller screens */
+    }
+  }
+  p{
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 30px;
+    font-size: 16px;             /* Set the font size */
+  line-height: 1.6;            /* Line spacing (line height) */
+  color: #333;                 /* Text color */
+  margin: 10px 0; 
+  font-family: Arial, sans-serif;  /* Font family */
+  font-weight: 400;                /* Font weight (e.g., 400 for normal, 700 for bold) */
+  font-style: italic;  
+  background-color: #f4f4f4;       /* Light background color */
+  padding: 10px;                   /* Padding around text */
+  border-left: 4px solid #333;     /* Left border for a note-like effect */
+  }
+  img {
+    max-width: 100%;            /* Ensures the image scales within its container */
+    height: auto;               /* Keeps the image's aspect ratio */
+    display: block;             /* Removes any extra whitespace below the image */
+    border: 2px solid #333;   /* Solid border with a specific color */
+    border-radius: 8px;       /* Rounds the corners */
+    border-radius: 50%;       /* Makes the image a perfect circle */
+    width: 500px;             /* Set width and height to control size */
+    height: 300px;
+  }
+  

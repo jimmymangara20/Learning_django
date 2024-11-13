@@ -1,0 +1,67 @@
+/* h2{
+    color: blue;
+}
+/* Reset some default styling */
+/* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;*/
+/*}
+
+/* General body styling */
+/*body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Style for the header and navigation bar */
+/*header {
+    background-color: magenta;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Main content styling */
+/*main {
+    padding: 20px;
+}
+
+/* Footer styling */
+/*footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}

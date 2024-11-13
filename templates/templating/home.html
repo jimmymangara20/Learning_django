@@ -1,0 +1,33 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templating</title>
+    <link rel="stylesheet" href="{% static 'asset/style.css' %}">
+</head>
+<body style="background-color: blueviolet; font-family: Arial, sans-serif; color: #333;">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'templating:about' %}">About Us</a><br></li>
+                <li> <a href="{% url 'templating:contact' %}">Contact</a><br></li>
+                <li><a href="{% url 'templating:team' %}">Our Team</a><br></li>
+                <li><a href="{% url 'templating:story' %}">Our Story</a><br></li>
+
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <h2>We are learning how to use css in django</h2>
+    <img src="{% static 'asset\images\jimmy.jpg' %}" alt=""style="display: inline-block; margin-right: 10px;">
+    <img src="{% static 'asset\images\wedding.jpg'%}" alt=""style="display: inline-block;">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus aspernatur consectetur delectus necessitatibus illo,
+         soluta at, minima adipisci fuga est
+         error totam iste, nulla ipsum laboriosam dolorem veritatis laudantium et!</p>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, est labore id nisi reprehenderit, nemo suscipit soluta cupiditate dolorum, optio odio saepe omnis iusto voluptatem sunt. 
+            Et eaque cupiditate temporibus?</p>
+</body>
+</html>

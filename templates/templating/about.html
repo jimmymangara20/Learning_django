@@ -1,0 +1,30 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{% static 'asset\style.css'%}">
+</head>
+<body style="background-color: mediumslateblue; font-family: Arial, sans-serif; color: #333;">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'templating:about' %}">About Us</a><br></li>
+                <li> <a href="{% url 'templating:contact' %}">Contact</a><br></li>
+                <li><a href="{% url 'templating:team' %}">Our Team</a><br></li>
+                <li><a href="{% url 'templating:story' %}">Our Story</a><br></li>
+
+            </ul>
+        </nav>
+    </header>
+    <h2 style="color: yellow; font-size: 24px; text-align: center;">This is about us</h2>
+    <img src="{%static 'asset\images\evangelist.jpg'%}" alt=""style="display: inline-block; margin-right: 10px;">
+    <img src="{%static 'asset\images\mbogi.jpg'%}" alt=""style="display: inline-block;">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, saepe iure autem delectus nam recusandae vero iste, quidem neque error facilis distinctio commodi a,
+         reprehenderit doloremque? Repudiandae vitae magni voluptate.</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam provident necessitatibus, animi quasi distinctio molestias exercitationem. Nobis quia ut, explicabo totam ea accusantium 
+            possimus illo iste repellendus, accusamus, sint vero.</p>
+</body>
+</html>
